@@ -8,7 +8,7 @@ const Blog = ({ data }: any) => {
   const { onRoute, onDelete } = useBlog();
   return (
     <BlogWrapper>
-      {data.length > 0 &&
+      {data?.length > 0 &&
         data?.map((data: any, index: number) => (
           <Article
             onRoute={onRoute}

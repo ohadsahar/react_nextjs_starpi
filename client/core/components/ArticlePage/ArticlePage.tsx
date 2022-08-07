@@ -14,7 +14,7 @@ const ArticlePage = ({ title, blogbody, blogimage }: ArticleProps) => {
       <ArticleInfoWrapper>
         <AppTitle title={title} />
       </ArticleInfoWrapper>
-      <ArticleImage src={blogimage.data.attributes.url} />
+      <ArticleImage src={blogimage?.data?.attributes?.url} />
       <ArticleHintText>{blogbody}</ArticleHintText>
     </ArticlePageWrapper>
   );

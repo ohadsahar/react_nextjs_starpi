@@ -1,5 +1,5 @@
 import React from "react";
-import { AppTitleWrapper } from "./styled";
+import { AppTitleWrapper } from "./Styled";
 
 export interface AppTitleProps {
   title?: string;

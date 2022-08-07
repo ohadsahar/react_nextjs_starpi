@@ -27,7 +27,7 @@ const Article = ({ id, attributes, onRoute, onDelete }: Article) => {
           alt="ohad"
           width={300}
           height={300}
-          src={attributes.blogimage.data.attributes.url}
+          src={attributes?.blogimage?.data?.attributes?.url}
         />
         <ArticleRightSideWrapper>
           <ArticleInfo>
@@ -37,7 +37,7 @@ const Article = ({ id, attributes, onRoute, onDelete }: Article) => {
             </ArticleDescriptionText>
           </ArticleInfo>
           <AppButton
-            articleTitle={attributes.title}
+            articleTitle={attributes?.title}
             buttonText={"Navigate Page"}
             onPress={onRoute}
           />

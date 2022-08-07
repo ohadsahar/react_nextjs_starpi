@@ -24,7 +24,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
   const res = await fetch(`${STARPI_API_URL}/graphql`, fetchParams);
   const posts = await res.json();
-  const paths = posts.data.blogposts.data.map((post: any) => {
+  const paths = posts.data?.blogposts?.data?.map((post: any) => {
     return { params: { title: post.attributes.title } };
   });
 
@@ -67,7 +67,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const res = await fetch(`${STARPI_API_URL}/graphql`, fetchParams);
   const posts = await res.json();
   return {
-    props: posts.data.blogposts.data[0].attributes,
+    props: posts.data?.blogposts?.data[0].attributes,
   };
 };
 
