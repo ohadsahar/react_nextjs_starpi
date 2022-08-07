@@ -1,5 +1,3 @@
-import React from "react";
-import { ArticleProps } from "../../../models/Article.model";
 import { useBlog } from "../../customHooks/useBlog";
 import Article from "../Article/Article";
 import { BlogWrapper } from "./Styled";
