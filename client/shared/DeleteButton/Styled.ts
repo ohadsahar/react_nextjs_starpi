@@ -7,4 +7,5 @@ export const AppButtonWrapper = styled.button`
   border: none;
   border-radius: 8px;
   height: 5vh;
+  width: 25vw;
 `;
