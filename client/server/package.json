@@ -1,0 +1,34 @@
+{
+  "name": "server",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "publish-heroku": "git commit -am 'Changes to my-project noted' &&git push heroku HEAD:main && heroku open"
+  },
+  "dependencies": {
+    "@strapi/plugin-graphql": "^4.3.2",
+    "@strapi/plugin-i18n": "4.3.2",
+    "@strapi/plugin-users-permissions": "4.3.2",
+    "@strapi/provider-upload-cloudinary": "^4.3.2",
+    "@strapi/strapi": "4.3.2",
+    "better-sqlite3": "7.4.6",
+    "pg": "^8.7.3",
+    "pg-connection-string": "^2.5.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "b282687d-8daf-40d9-abf3-6a36cef38c47"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
