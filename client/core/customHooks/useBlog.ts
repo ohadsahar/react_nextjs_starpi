@@ -37,8 +37,7 @@ export const useBlog = () => {
       `,
       }),
     };
-    const res = await fetch(`${STARPI_API_URL}/graphql`, fetchParams);
-    const deletedPost = await res.json();
+    await fetch(`${STARPI_API_URL}/graphql`, fetchParams);
   };
 
   return { onRoute, onDelete };
