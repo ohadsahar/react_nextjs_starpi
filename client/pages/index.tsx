@@ -33,7 +33,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const data = await res.json();
   return {
     props: data,
-    revalidate: 30,
+    revalidate: 10,
   };
 };
 
