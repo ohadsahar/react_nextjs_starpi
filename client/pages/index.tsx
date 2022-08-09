@@ -33,6 +33,7 @@ export const getServerSideProps: GetStaticProps = async (context) => {
   const data = await res.json();
   return {
     props: data,
+    revalidate: 30,
   };
 };
 
