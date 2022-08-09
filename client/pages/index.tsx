@@ -2,7 +2,7 @@ import type { GetStaticProps, NextPage } from "next";
 import { STARPI_API_URL } from "../config/Config";
 import Blog from "../core/components/Blog/Blog";
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getServerSideProps: GetStaticProps = async (context) => {
   const fetchParams = {
     method: "post",
     headers: {
@@ -33,7 +33,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const data = await res.json();
   return {
     props: data,
-    revalidate: true
   };
 };
 
