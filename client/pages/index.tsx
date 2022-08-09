@@ -33,6 +33,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const data = await res.json();
   return {
     props: data,
+    fallback:true,
     revalidate: true,
   };
 };
